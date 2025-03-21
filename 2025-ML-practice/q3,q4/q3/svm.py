@@ -3,7 +3,7 @@ from sklearn import svm
 def train_model(x_mat, y_vec):
     
     # <ToDo>: scikit-learn을 활용해서 모델을 생성하고, x_mat, y_vec으로 모델을 학습시킵니다.
-    model = svm.SVC(linear, 80)
+    model = svm.SVC(kernel='linear', C=80)
     trained_model = model.fit(x_mat,y_vec)
     
     return trained_model

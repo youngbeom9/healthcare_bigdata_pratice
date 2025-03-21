@@ -6,7 +6,7 @@ import graph_plot
 
 def main():
     # 데이터를 불러옵니다.
-    x_train, y_train, x_val, y_val = preprocess.load_data('./data/iris.csv', independent_var = ['petal length', 'sepal length'], response_var = 'class_num')
+    x_train, y_train, x_val, y_val = preprocess.load_data(r"C:\Users\302-28\git-repo\2025-ML-practice\q3,q4\q4\data\iris.csv", independent_var = ['petal length', 'sepal length'], response_var = 'class_num')
     
     # <ToDo>: svm.py 안의 함수를 사용해 네 SVM 모델을 불러오고 학습시킵니다.
     svm_linear = svm.train_linear_model(x_train, y_train)
